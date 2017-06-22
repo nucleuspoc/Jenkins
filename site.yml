@@ -2,6 +2,6 @@
 
 - hosts: all
   connection: local
-  gather_facts: no
+  gather_facts: yes
   roles:
     - quicktest

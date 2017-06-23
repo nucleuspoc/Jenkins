@@ -3,7 +3,7 @@
     config: "{{ config }}"
     state: present
     data:
-      name: 'ESXi-Shared-Vol-Data01'
+      name: 'ESXi-Shared-Tom'
       description: 'Data Volume for ESXi'
       raidLevel: "RAID5"
       provisioningParameters:
@@ -20,7 +20,7 @@
     config: "{{ config }}"
     state: present
     data:
-      name: 'ESXi-Shared-Vol-Log-01'
+      name: 'ESXi-Shared-Joe'
       description: 'Log volume for share ESXi'
       raidLevel: "RAID5"
       provisioningParameters:

@@ -1,0 +1,91 @@
+---
+config: '{{ playbook_dir }}/config.json'
+#
+# Hardware
+#
+Encl_Type: 'SY12000'
+InterconType12: 'Synergy 12Gb SAS Connection Module'
+InterconType16: 'Virtual Connect SE 16Gb FC Module for Synergy'
+InterconType40: 'Virtual Connect SE 40Gb F8 Module for Synergy'
+Serv_b1: 'CZ3712MP48, bay 1' #Bay 1 in the server
+Serv_b2: 'CZ3712MP48, bay 2' #Bay 2 in the server
+Serv_b3: 'CZ3712MP48, bay 3' #Bay 3 in the server
+Serv_b4: 'CZ3712MP48, bay 4' #Bay 4 in the server
+Serv_b5: 'CZ3712MP48, bay 5' #Bay 5 in the server
+Serv_b6: 'CZ3712MP48, bay 6' #Bay 6 in the server
+Serv_Type480: 'SY 480 Gen9 1'
+Serv_Type660: 'SY 660 Gen9 1'
+#
+# Ports & IPs
+#
+IP_Address: '10.0.5.98'
+IP_Dns1: '30.5.86.7'
+IP_Dns2: '30.5.86.8'
+IP_Gateway: '10.0.5.1'
+IP_SubNet: '255.255.255.0'
+Port_Q1_1: '62'
+Port_Q2_1: '67'
+Port_Eth_FCoE_Q1_1: '87'
+Port_Eth_FCoE_Q3_1: '72'
+Port_Eth_FCoE_Q4_1: '77'
+#
+# Storage Sizes
+#
+c20Gb: '21474836480'
+c50Gb: '53687091200'
+c100Gb: '107374182400'
+c120Gb: '128849018880'
+c500Gb: '536870912000'
+c700Gb: '751619276800'
+#
+# Names
+#
+Cust_VLAN: 'Net-VLAN203-Cust'
+Deploy_NET: 'Deployment'
+DMZ_VLAN: 'Net-VLAN201-DMZ'
+Enclosure_Group: 'SYN-DBPOC-EG'
+Man_NET: 'Management'
+Man_VLAN: 'Net-VLAN202-Man'
+NET_Eth: 'Ethernet'
+NET_FC: 'FibreChannel'
+NET_SAN_A: 'SAN_A'
+NET_SAN_B: 'SAN_B'
+SAN_A: 'SAN-A'
+SAN_B: 'SAN-B'
+SAN_Mgr: 'Brocade Network Advisor'
+Uplink_Deploy: 'Deployment-Uplink'
+Uplink_SAN_A: 'SAN-A-UplinkSet'
+Uplink_SAN_B: 'SAN-B-UplinkSet'
+Vol_Stor_Pool1: 'FC_r1'
+Vol_Stor_Pool5: 'FC_r5'
+Vol_Stor_Pool6: 'FC_r6'
+Vol_Stor_Sys: 'REA-3PAR01'
+#
+# Uris
+#
+#Encl_Uri: '/rest/enclosures/797740CZ3712MP48' #CZ3712MP48
+#Encl_Group_Uri: '/rest/enclosure-groups/9fafc382-bbef-4a94-a9d1-05f77042f3ac' #SYN-DBPOC-EG
+IP_Range_Uri: '/rest/id-pools/ipv4/ranges/02f4bd9c-c3c6-4315-aa6d-43cec38cdce5' #Ipv4 address in settings
+#LIG_URI: '/rest/logical-interconnect-groups/974a4840-151d-469e-94a6-b5730d1792d7'
+#NET_Deploy_Uri: '/rest/ethernet-networks/573a0818-8925-4201-87b7-c284e42272d6'
+#NET_SAN_A_Uri: '/rest/fc-networks/b8498019-6ef7-4fd9-bfa1-323b22507865'
+#NET_SAN_B_Uri: '/rest/fc-networks/7c3e90d6-35f5-430d-bc9b-9da562ceed65'
+#NET_VLANCust_Uri: '/rest/ethernet-networks/074f0510-40ef-4ccf-a6d8-24da7c4a6971'
+#NET_VLANDMZ_Uri: '/rest/ethernet-networks/f3c10478-dee0-4850-ad6d-c635442f86b7'
+#NET_VLANMan_Uri: '/rest/ethernet-networks/43564690-c48f-40d3-98a6-b86235c9a352'
+#SAN_A_Uri: '/rest/fc-sans/managed-sans/83af92ec-f4fa-4366-a0a1-a78500ede6b7' #Managed SAN A
+#SAN_B_Uri: '/rest/fc-sans/managed-sans/8782ad40-40f7-4146-85e7-a78500ede6b7' #Managed SAN B
+#Stor_System_Uri: '/rest/storage-systems/1652247' #REA-3PAR01
+#Vol_Stor_Pool1_Uri: '/rest/storage-pools/04E0D5D4-80AB-4794-BDC7-773F6CC3E5F2' #FC_R1
+#Vol_Stor_Pool5_Uri: '/rest/storage-pools/1DC00A43-CBC7-4EC6-AB74-2F3EC02949F0' #FC_R5
+#Vol_Stor_Pool6_Uri: '/rest/storage-pools/07DED958-6ADE-45F3-8A70-44DF47031B03' #FC_R6
+#
+# Logins
+#
+SAN_Mgr_Host: '30.5.86.41'
+SAN_Mgr_Port: '5989'
+SAN_Mgr_Username: 'Administrator'
+SAN_Mgr_Password: 'password'
+STOR_Sys_Host: '30.5.86.1'
+STOR_Sys_Username: '3paradm'
+STOR_Sys_Password: '3pardata'

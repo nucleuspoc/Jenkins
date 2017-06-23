@@ -1,5 +1,0 @@
-user_name: "wake@dbpoc.uk"
-password: "Start1234"
-
-
-config: '{{ playbook_dir }}/config.json'

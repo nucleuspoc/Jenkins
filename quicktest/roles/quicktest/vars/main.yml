@@ -1,5 +1,5 @@
 ---
-config: '/tmp/config.json'
+config: '{{ playbook_dir }}/config.json'
 #
 # Hardware
 #

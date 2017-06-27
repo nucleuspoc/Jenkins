@@ -5,3 +5,5 @@
   gather_facts: no
   roles:
     - quicktest
+  vars_files:
+   - /etc/ansible/secret.yml

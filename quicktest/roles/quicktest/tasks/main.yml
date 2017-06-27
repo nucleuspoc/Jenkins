@@ -3,10 +3,10 @@
     config: "{{ config }}"
     state: present
     data:
-      name: "AnsibleProfileTemplateTest101"
+      name: "NewTestProfileJoe"
       description: "Test Description"
-      server_hardware: "{{ Serv_b4 }}"
-      serverHardwareTypeName: "{{ Serv_Type480 }}"
+      server_hardware: "{{ Serv_b1 }}"
+      serverHardwareTypeName: "{{ Serv_Type660 }}"
       enclosureGroupName: "{{ Enclosure_Group }}"
 #
 # This function of code is for the image streamer. If not needed, remove
@@ -163,7 +163,7 @@
     config: "{{ config }}"
     state: power_state_set
     data:
-        name : "{{ Serv_b4 }}" #The Server HW name
+        name : "{{ Serv_b1 }}" #The Server HW name
         powerStateData:
             powerState: "On"
             powerControl: "MomentaryPress" #MomentaryPress and PressAndHold are the two options

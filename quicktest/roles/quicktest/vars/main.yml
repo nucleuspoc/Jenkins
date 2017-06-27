@@ -1,5 +1,5 @@
 ---
-config: "home/isibor/quicktest/config.json"
+config: '/tmp/config.json'
 #
 # Hardware
 #

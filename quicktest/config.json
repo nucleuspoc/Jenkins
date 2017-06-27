@@ -1,8 +1,8 @@
 {
     "ip": "10.0.5.2",
     "credentials": {
-        userName: "{{userName}}",
-        password: "{{password}}"
+        "userName": "{{userName}}",
+        "password": "{{password}}"
         },
     "api_version": 300
 }

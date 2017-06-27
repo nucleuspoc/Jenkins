@@ -1,5 +1,5 @@
 ---
-config: '{{ playbook_dir }}/config.json'
+config: 'home/isibor/quicktest/config.json'
 #
 # Hardware
 #
